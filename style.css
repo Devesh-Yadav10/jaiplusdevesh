@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Danfo';           
+    src: url('font/Oswald-VariableFont_wght.ttf') format('truetype');             
+}
+@font-face {
+    font-family: 'Fontania';           
+    src: url('font/Fontania.otf') format('opentype');             
+}
+ 
+.header{
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    background-color: #454B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 4px gray;
+    position: fixed;
+    top: 0;
+}
+.header a{
+    color: #000;
+    font-size: 23px;
+    text-decoration: none;
+    font-family: Danfo;
+    font-weight: 700;
+    height: 100%;display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        color: white;
+
+        background-color: #000;
+    }
+}
+.middle{
+    padding: 130px 25px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-template-rows: auto auto;
+    gap: 50px;
+}
+body{
+    background-color: beige;
+}
+.middleinfo,.middleimg{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.middleinfo{
+    font-size: 30px;
+    font-family: Fontania;
+    font-weight: 400;
+}
+img{
+    width: 80%;
+}
+form{
+    padding: 50px;
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 20%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.button{
+    width: 100%;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(40, 40, 40);
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: rgb(40, 40, 40);
+        
+    }
+}
+
+.form{
+    padding: 30px;
+    width: 100%;
+    background-image: url(images/316032081319.jpg);
+}
+form input[type="text"],
+form input[type="password"]{
+    background: none;
+    color: white;
+    font-family: Danfo;
+    height: 30px;
+    border: 0px 0px 0px 2px solid white;
+}
+form label{
+    font-size: 15px;
+    font-family: fantasy;
+}
+footer{
+    background-color: beige;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    margin-top: 3px;
+    width: 100%;
+    color: #3E362E;
+    justify-content: space-evenly;
+    
+}
+.footer1-top,
+.footer2-top,
+.footer3-top,
+.footer4-top{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer1{
+    width: 20%;
+}
+img{
+    border: 2px solid black;
+    padding: 20px;
+}
+footer ul{
+    padding-left: 0px;
+}
+.footer2,
+.footer3,
+.footer4{
+    width: 15%;
+}
+.footer1-bottom{
+    font-family: Poppins;
+    font-weight: 200;
+}
+footer ul, footer li{
+    background: none;
+    animation: none;
+    
+    text-shadow: none;
+    color: black;
+    font-size: 15px;
+}
+footer ul{
+    padding: 0px;
+}
+footer li{
+    margin-top: 5px;
+    font-weight: 200;
+    font-family: Poppins;
+    list-style: none;
+    text-align: left;
+}
+.tnc{
+    background-color: beige;
+    text-align: right;
+    color: #3E362E;
+    padding-right: 5px;
+    margin-top: 2px;
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .content{
+        width: 100%;
+    }
+    .middle {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    }
+    img{
+        width: 100%;
+    }
+    form{
+        width: 50%;
+    }
+    .form, .middle{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 30px;
+        width: 100%;
+    }
+    .footer2,
+    .footer3,
+    .footer4{
+        width: 100%;
+    }
+    .footer1{
+        width: 100%;
+    }
+    .tnc{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+    img{
+        width: 90%;
+        padding: 20px;
+
+    }
+}
