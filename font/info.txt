@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-﻿license: Freeware, Non-Commercial
-=======
-﻿license: Freeware, Non-Commercial
->>>>>>> 4d74a34f2ca20c3ef844325f8b5c2baeb285486e
-link: https://www.fontspace.com/comback-home-font-f89181
